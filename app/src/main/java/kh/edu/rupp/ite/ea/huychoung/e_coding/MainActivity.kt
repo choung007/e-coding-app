@@ -20,17 +20,18 @@ class MainActivity : AppCompatActivity() {
         initComponents()
         bottomNav()
     }
-
     private fun initComponents() {
 
     }
 
     private fun bottomNav() {
+        val homeFragment = HomeFragment()
+        setFragment(homeFragment)
         binding.bottomNav.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.homeMenu -> {
                     // set home fragment.
-                    setFragment(HomeFragment())
+                    setFragment(homeFragment)
                 }
                 R.id.courseMenu -> {
                     // set course fragment.

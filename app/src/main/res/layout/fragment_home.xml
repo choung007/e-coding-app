@@ -6,12 +6,149 @@
     android:layout_height="match_parent"
     tools:context=".ui.fragments.HomeFragment">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Home Page"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <RelativeLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="12dp"
+        android:background="@drawable/get_started_box"
+        android:gravity="center_vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/banner_animation"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/black_color"
+            android:fontFamily="@font/rubik_semi_bold"
+            android:text="What do you want to learn today ?"/>
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Get Started"
+            android:textColor="@color/white_color"
+            android:fontFamily="@font/rubik_medium"
+            android:textSize="12sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container1"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="18dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Learning Plan"
+            android:textColor="@color/black_color"
+            android:textStyle="bold"
+            android:fontFamily="@font/rubik_semi_bold"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/learning_plan_box"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Web Application Course"
+                    android:textColor="@color/white_color"
+                    android:fontFamily="@font/rubik_medium"
+                    android:textSize="16sp"
+                    />
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="40/48"
+                    android:textColor="@color/white_color"
+                    android:fontFamily="@font/rubik_medium"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginHorizontal="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Application Course"
+                    android:textColor="@color/white_color"
+                    android:fontFamily="@font/rubik_medium"
+                    android:textSize="16sp"
+                    />
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10/24"
+                    android:textColor="@color/white_color"
+                    android:fontFamily="@font/rubik_medium"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="more"
+                android:textSize="14sp"
+                android:textColor="@color/white_color"
+                android:fontFamily="@font/rubik_medium"
+                android:layout_marginTop="18dp"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

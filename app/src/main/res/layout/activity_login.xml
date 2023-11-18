@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:fontFamily="@font/rubik_semi_bold"
-        android:text="Login"
+        android:text="@string/login"
         android:textColor="@color/blue_color"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,7 +25,7 @@
         android:layout_height="56dp"
         android:layout_marginHorizontal="12dp"
         android:layout_marginTop="24dp"
-        android:hint="Email"
+        android:hint="@string/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txtLogin" />
@@ -36,7 +36,7 @@
         android:layout_height="56dp"
         android:layout_marginHorizontal="12dp"
         android:layout_marginTop="8dp"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,7 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="Forgot password?"
+        android:text="@string/forgot_password"
         app:layout_constraintEnd_toEndOf="@+id/edPassword"
         app:layout_constraintTop_toBottomOf="@+id/edPassword" />
 
@@ -77,13 +77,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="12dp"
-            android:text="Don't have an account?"/>
+            android:text="@string/don_t_have_an_account"/>
 
         <TextView
             android:id="@+id/txtSignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sign up"
+            android:text="@string/sign_up"
             android:textAlignment="center" />
     </LinearLayout>
 

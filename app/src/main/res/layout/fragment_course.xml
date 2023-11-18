@@ -1,18 +1,224 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginHorizontal="12dp"
     tools:context=".ui.fragments.CourseFragment">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/accountContainer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        >
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_account_profile"
+            android:layout_alignParentEnd="true"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Course Page"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/courseTextView"
+        android:layout_below="@+id/accountContainer">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course"
+            android:fontFamily="@font/rubik_semi_bold"
+            android:textColor="@color/black_color"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/searchContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/courseTextView"
+        android:layout_marginTop="12dp"
+        >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/ic_search"
+                android:background="@drawable/learning_plan_box"
+                android:hint="Find Courses"
+                android:textColorHint="@color/white_color"
+                android:fontFamily="@font/rubik_light"
+                android:textSize="14sp"
+                android:paddingStart="12dp"
+                />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtChoiceYourCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/rubik_semi_bold"
+        android:text="Choice your course"
+        android:textColor="@color/black_color"
+        android:textSize="18sp"
+        android:layout_below="@+id/searchContainer" />
+
+    <LinearLayout
+        android:id="@+id/btnAllAndFreeCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/txtChoiceYourCourse">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All"
+            android:textSize="12sp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Free"
+            android:textSize="12sp"
+            android:layout_marginStart="12dp"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAllAndFreeCourse"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/webCourseContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp">
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/image_web_application">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Web Application"
+                        android:textColor="@color/black_color"
+                        android:fontFamily="@font/rubik_medium"
+                        android:textSize="14sp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FrontEnd and BackEnd"
+                        android:textColor="@color/black_color"
+                        android:fontFamily="@font/rubik_light"
+                        android:textSize="12sp">
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$ Free Course"
+                            android:textColor="@color/dark_blue_color"
+                            android:fontFamily="@font/rubik_semi_bold"
+                            android:textSize="12sp">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="16 hours"
+                            android:textColor="@color/orange_color"
+                            android:textSize="12sp"
+                            android:layout_marginStart="18dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/image_mobile_application">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile Application"
+                        android:textColor="@color/black_color"
+                        android:fontFamily="@font/rubik_medium"
+                        android:textSize="14sp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Android and IOS"
+                        android:textColor="@color/black_color"
+                        android:fontFamily="@font/rubik_light"
+                        android:textSize="12sp">
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$ Free Course"
+                            android:textColor="@color/dark_blue_color"
+                            android:fontFamily="@font/rubik_semi_bold"
+                            android:textSize="12sp">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="16 hours"
+                            android:textColor="@color/orange_color"
+                            android:textSize="12sp"
+                            android:layout_marginStart="18dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

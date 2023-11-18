@@ -5,4 +5,9 @@
     <color name="blue_color">#3992D1</color>
     <color name="soft_color">#3E3E55</color>
     <color name="grey_color">#9D9D9D</color>
+    <color name="soft_blue_color">#CEECFE</color>
+    <color name="dark_grey_color">#2F2F42</color>
+    <color name="dark_blue_color">#3D5CFF</color>
+    <color name="orange_color">#FF6905</color>
+
 </resources>
