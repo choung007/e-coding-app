@@ -11,11 +11,11 @@ class SignUpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySignUpBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_sign_up)
+        setContentView(binding.root)
 
         // set onclickListener from txtLogin to LoginActivity
         binding.txtLogin.setOnClickListener {
-            startActivity(Intent(this@SignUpActivity, LoginActivity::class.java))
+            finish()
         }
     }
 }
