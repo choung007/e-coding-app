@@ -75,7 +75,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:background="@drawable/learning_plan_box"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="14dp"
             android:orientation="vertical">
 
             <LinearLayout
@@ -88,7 +88,7 @@
                     android:text="Web Application Course"
                     android:textColor="@color/white_color"
                     android:fontFamily="@font/rubik_medium"
-                    android:textSize="16sp"
+                    android:textSize="14sp"
                     />
                 <Space
                     android:layout_width="0dp"
@@ -100,7 +100,7 @@
                     android:text="40/48"
                     android:textColor="@color/white_color"
                     android:fontFamily="@font/rubik_medium"
-                    android:textSize="16sp"
+                    android:textSize="14sp"
                     />
             </LinearLayout>
 
@@ -115,7 +115,7 @@
                     android:text="Mobile Application Course"
                     android:textColor="@color/white_color"
                     android:fontFamily="@font/rubik_medium"
-                    android:textSize="16sp"
+                    android:textSize="14sp"
                     />
                 <Space
                     android:layout_width="0dp"
@@ -127,7 +127,7 @@
                     android:text="10/24"
                     android:textColor="@color/white_color"
                     android:fontFamily="@font/rubik_medium"
-                    android:textSize="16sp"
+                    android:textSize="14sp"
                     />
             </LinearLayout>
 
